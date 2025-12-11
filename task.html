@@ -11393,6 +11393,7 @@ const database = firebase.database();
                                 id = snapshot.val().id;
                                 descrip = snapshot.val().descrip;
                                 o_type = snapshot.val().o_type;
+                                 ordername = snapshot.val().o_name;
                                 sprice = snapshot.val().sprice;
 
                                 out_fund = snapshot.val().out_fund;
@@ -11555,6 +11556,7 @@ const database = firebase.database();
                                 id = snapshot.val().id;
                                 descrip = snapshot.val().descrip;
                                 o_type = snapshot.val().o_type;
+                                ordername = snapshot.val().o_name;
                                 sprice = snapshot.val().sprice;
                                  out_fund = snapshot.val().out_fund;
                       bons = snapshot.val().bonus;
@@ -11578,7 +11580,7 @@ const database = firebase.database();
     
                             document.getElementById("pimage").src = pimage;
 
-                            $('#order_type').html(o_type);
+                            $('#order_type').html(ordername);
                             $('#bon').html(bons);
     
     
